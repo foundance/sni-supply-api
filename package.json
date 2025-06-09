@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "concurrently -n NEXT,TS -c magenta,cyan \"next dev -p 8080\" \"yarn ts --watch\"",
     "build": "next build",
-    "start": "next start -p 8080"
+    "start": "next start -p 8080",
+    "deploy:apprunner": "npm install && next build"
   },
   "author": "johnmark13",
   "license": "ISC",
